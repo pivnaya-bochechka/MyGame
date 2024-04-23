@@ -83,7 +83,7 @@
             // 
             this.player.BackColor = System.Drawing.Color.Transparent;
             this.player.Image = global::MyGame.Properties.Resources.playerUp;
-            this.player.Location = new System.Drawing.Point(326, 296);
+            this.player.Location = new System.Drawing.Point(283, 267);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(90, 150);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -100,13 +100,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(99)))), ((int)(((byte)(94)))));
             this.BackgroundImage = global::MyGame.Properties.Resources.Fon;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(856, 561);
             this.Controls.Add(this.player);
             this.Controls.Add(this.healthBar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.txtAmmo);
+            this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
